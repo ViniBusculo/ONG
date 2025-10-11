@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ONG Exemplo — Projetos</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <img src="images/logo.png" alt="Logotipo da ONG" class="logo">
+        <nav aria-label="Navegação principal">
+          <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="projects" aria-labelledby="projects-title">
+        <div class="container">
+            <h1 id="projects-title">Projetos Sociais</h1>
+            <p>
+            A <strong>Busculo's</strong> acredita no poder do voluntariado e da união para gerar mudanças reais.
+            Nossos projetos são voltados à educação, alimentação e inclusão social, promovendo dignidade e novas
+            oportunidades para quem mais precisa.
+            </p>
+
+            <article class="project-card" aria-labelledby="proj1">
+            <h2 id="proj1">Projeto 1 — Educação</h2>
+            <img src="images/projetos/projeto1.jpg" alt="Crianças em sala de aula">
+            <p>
+                O projeto de Educação oferece reforço escolar e oficinas culturais para crianças e adolescentes.
+                Nosso objetivo é combater a evasão escolar e incentivar o aprendizado contínuo. Você pode ajudar
+                sendo voluntário, doando materiais ou apoiando financeiramente as atividades.
+            </p>
+            </article>
+
+            <article class="project-card" aria-labelledby="proj2">
+            <h2 id="proj2">Projeto 2 — Alimentação</h2>
+            <img src="images/projetos/projeto2.jpg" alt="Distribuição de alimentos">
+            <p>
+                O projeto de Alimentação realiza campanhas mensais para arrecadar e distribuir cestas básicas a
+                famílias em situação de vulnerabilidade. Nosso propósito é garantir o direito à alimentação digna
+                e reduzir a insegurança alimentar em nossa comunidade.
+            </p>
+            </article>
+
+            <section class="donate" aria-labelledby="donate-title">
+            <h2 id="donate-title">Como doar</h2>
+            <p>
+                Você pode contribuir com qualquer valor via transferência bancária ou PIX. Também realizamos
+                campanhas de arrecadação e recebemos doações de alimentos, roupas e materiais escolares.
+                <br><br>
+                <strong>Chave PIX:</strong> contato@busculos.org<br>
+                <strong>Banco Solidariedade:</strong> Ag. 1234 — C/C 56789-0
+            </p>
+            </section>
+        </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="ano2"></span> ONG Exemplo.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('ano2').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

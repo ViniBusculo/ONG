@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ONG Exemplo — Início</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <img src="images/logo.png" alt="Logotipo da ONG" class="logo">
+        <nav aria-label="Navegação principal">
+          <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container">
+          <h1 id="hero-title">Busculo's — Transformando Vidas</h1>
+          <p>Nossa missão é promover oportunidades e apoiar comunidades em situação de vulnerabilidade, incentivando a solidariedade e a transformação social.</p>
+          <img src="images/hero.jpg" alt="Voluntários em ação" class="hero-img">
+        </div>
+      </section>
+
+      <section class="about" aria-labelledby="about-title">
+        <div class="container">
+            <h2 id="about-title">Sobre a organização</h2>
+            <p>
+            A <strong>Busculo's</strong> é uma organização sem fins lucrativos dedicada a transformar realidades
+            por meio de projetos sociais, educativos e de inclusão. Desde sua fundação, atua com o propósito de
+            oferecer apoio a famílias e comunidades em situação de vulnerabilidade, incentivando a solidariedade,
+            o voluntariado e o desenvolvimento humano.
+            </p>
+            <address>
+            <strong>Contato</strong><br>
+            Rua Esperança, 123 — São Caetano do Sul — SP<br>
+            E-mail: <a href="mailto:contato@busculos.org">contato@busculos.org</a><br>
+            Telefone: (11) 91234-5678
+            </address>
+        </div>
+       </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="ano"></span> ONG Exemplo. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script>
+      // atualiza ano do rodapé
+      document.getElementById('ano').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
