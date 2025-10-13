@@ -1,62 +1,110 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>ONG Exemplo — Início</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container">
-        <img src="images/logo.png" alt="Logotipo da ONG" class="logo">
-        <nav aria-label="Navegação principal">
-          <ul class="menu">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="projetos.html">Projetos</a></li>
-            <li><a href="cadastro.html">Cadastro</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Busculo's — Transformando Vidas</title>
 
-    <main>
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="container">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <header>
+    <div class="container header-content">
+      <img src="images/logo.png" alt="Logo Busculo's" class="logo">
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+          <li><a href="#doar">Doar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-content">
+        <div>
           <h1 id="hero-title">Busculo's — Transformando Vidas</h1>
-          <p>Nossa missão é promover oportunidades e apoiar comunidades em situação de vulnerabilidade, incentivando a solidariedade e a transformação social.</p>
-          <img src="images/hero.jpg" alt="Voluntários em ação" class="hero-img">
+          <p>Promovemos solidariedade e oportunidades para transformar vidas.</p>
+          <a href="#doar" class="btn">Doe Agora</a>
         </div>
-      </section>
-
-      <section class="about" aria-labelledby="about-title">
-        <div class="container">
-            <h2 id="about-title">Sobre a organização</h2>
-            <p>
-            A <strong>Busculo's</strong> é uma organização sem fins lucrativos dedicada a transformar realidades
-            por meio de projetos sociais, educativos e de inclusão. Desde sua fundação, atua com o propósito de
-            oferecer apoio a famílias e comunidades em situação de vulnerabilidade, incentivando a solidariedade,
-            o voluntariado e o desenvolvimento humano.
-            </p>
-            <address>
-            <strong>Contato</strong><br>
-            Rua Esperança, 123 — São Caetano do Sul — SP<br>
-            E-mail: <a href="mailto:contato@busculos.org">contato@busculos.org</a><br>
-            Telefone: (11) 91234-5678
-            </address>
-        </div>
-       </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <p>&copy; <span id="ano"></span> ONG Exemplo. Todos os direitos reservados.</p>
+        <img src="images/hero.jpg" alt="Voluntários em ação" class="hero-img">
       </div>
-    </footer>
+    </section>
 
-    <script>
-      // atualiza ano do rodapé
-      document.getElementById('ano').textContent = new Date().getFullYear();
-    </script>
-  </body>
+    <!-- SOBRE -->
+    <section class="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">Sobre a organização</h2>
+        <p>
+          A <strong>Busculo's</strong> é uma organização sem fins lucrativos dedicada a transformar realidades
+          por meio de projetos sociais, educativos e de inclusão. Atuamos para promover dignidade e
+          oportunidades às comunidades mais vulneráveis.
+        </p>
+        <address>
+          <strong>Contato</strong><br>
+          Rua Esperança, 123 — São Caetano do Sul — SP<br>
+          E-mail: <a href="mailto:contato@busculos.org">contato@busculos.org</a><br>
+          Telefone: (11) 91234-5678
+        </address>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title">Projetos Sociais</h2>
+        <p>
+          Acreditamos no poder do voluntariado e da união para gerar mudanças reais.
+          Conheça nossos projetos e saiba como contribuir.
+        </p>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <img src="images/projetos/projeto1.jpg" alt="Crianças em sala de aula">
+            <div>
+              <h3>Projeto Educação</h3>
+              <p>
+                Oferece reforço escolar e oficinas culturais para crianças e adolescentes,
+                combatendo a evasão e incentivando o aprendizado contínuo.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="images/projetos/projeto2.jpg" alt="Distribuição de alimentos">
+            <div>
+              <h3>Projeto Alimentação</h3>
+              <p>
+                Realiza campanhas mensais para arrecadar e distribuir alimentos a famílias
+                em situação de vulnerabilidade.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <section class="donate" id="doar" aria-labelledby="donate-title">
+          <h3 id="donate-title">Como doar</h3>
+          <p>
+            Contribua via transferência bancária, PIX ou participe das campanhas de arrecadação.<br>
+            <strong>Chave PIX:</strong> contato@busculos.org<br>
+            <strong>Banco Solidariedade:</strong> Ag. 1234 — C/C 56789-0
+          </p>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Busculo's — Todos os direitos reservados.</p>
+  </footer>
+</body>
 </html>

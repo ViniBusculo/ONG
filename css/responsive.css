@@ -1,0 +1,24 @@
+@media (max-width: 900px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  header .menu {
+    display: none;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .btn {
+    font-size: var(--font-sm);
+  }
+}

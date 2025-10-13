@@ -1,0 +1,139 @@
+/* ==========================================================
+BASE
+========================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.container {
+  width: min(800px, 90%);
+  margin: var(--space-4) auto;
+}
+
+/* ==========================================================
+SEÇÃO DE CADASTRO
+========================================================== */
+.signup {
+  background-color: var(--color-white);
+  padding: var(--space-4);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.signup h1 {
+  text-align: center;
+  color: var(--color-primary-dark);
+  font-size: var(--font-lg);
+  margin-bottom: var(--space-3);
+}
+
+/* ==========================================================
+FORMULÁRIO
+========================================================== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+fieldset {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+  background-color: #fafafa;
+}
+
+legend {
+  font-weight: 600;
+  color: var(--color-primary);
+  padding: 0 var(--space-1);
+}
+
+label {
+  display: block;
+  margin-top: var(--space-2);
+  font-weight: 500;
+}
+
+input,
+select {
+  width: 100%;
+  padding: var(--space-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: var(--font-md);
+  margin-top: 4px;
+  transition: 0.2s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: var(--color-primary);
+  outline: none;
+  box-shadow: 0 0 5px rgba(30, 136, 229, 0.3);
+}
+
+/* ==========================================================
+BOTÃO
+========================================================== */
+.divButon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--space-3);
+}
+
+button[type="submit"] {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--font-md);
+  border-radius: var(--radius);
+  cursor: pointer;
+  align-self: center;
+  width: 60%;
+  transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.btn-voltar {
+  display: flex;
+  padding: 10px 20px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-voltar:hover {
+  background-color: #aaa;
+}
+
+/* ==========================================================
+RODAPÉ
+========================================================== */
+.site-footer {
+  text-align: center;
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+  padding: var(--space-3);
+  margin-top: var(--space-4);
+}
