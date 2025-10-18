@@ -130,10 +130,9 @@ button[type="submit"]:hover {
 /* ==========================================================
 RODAPÉ
 ========================================================== */
-.site-footer {
+footer {
   text-align: center;
+  padding: var(--space-3);
   background-color: var(--color-primary-dark);
   color: var(--color-white);
-  padding: var(--space-3);
-  margin-top: var(--space-4);
 }

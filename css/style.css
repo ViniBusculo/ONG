@@ -66,12 +66,11 @@ button {
 button {
   cursor: pointer;
 }
-.site-footer {
-  background: #fafafa;
-  border-top: 1px solid #eee;
-  padding: 1rem;
-  margin-top: 2rem;
+footer {
   text-align: center;
+  padding: var(--space-3);
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
 }
 @media (min-width: 800px) {
   .menu {

@@ -139,10 +139,9 @@ COMO DOAR
 /* ==========================================================
 RODAPÉ
 ========================================================== */
-.site-footer {
-  background-color: var(--color-primary-dark);
-  color: var(--color-white);
+footer {
   text-align: center;
   padding: var(--space-3);
-  margin-top: var(--space-5);
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
 }
