@@ -1,0 +1,26 @@
+{
+  "name": "ong",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compress": "imagemin images/* images/projetos/* --out-dir=dist/img --plugin=imagemin-webp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViniBusculo/ONG.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ViniBusculo/ONG/issues"
+  },
+  "homepage": "https://github.com/ViniBusculo/ONG#readme",
+  "dependencies": {
+    "imagemin": "^9.0.1",
+    "imagemin-cli": "^8.0.0",
+    "imagemin-webp": "^8.0.0"
+  }
+}
