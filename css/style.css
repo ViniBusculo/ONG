@@ -178,6 +178,10 @@ footer {
   background-color: var(--color-primary-dark);
   color: var(--color-white);
 }
+button:focus, a:focus {
+  outline: 3px solid #ffb703;
+  outline-offset: 2px;
+}
 @media (min-width: 800px) {
   .menu {
     gap: 2rem;
