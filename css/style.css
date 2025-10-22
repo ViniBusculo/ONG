@@ -22,6 +22,32 @@
   --max-input-width: 100%;
   --transition: 180ms ease-in-out;
 }
+
+/* ======= MODO ESCURO ======= */
+.dark-mode {
+  /* Fundo geral */
+  --bg-page: #121212;
+
+  /* Texto */
+  --color-neutral-900: #f1f1f1;
+  --color-muted: #a1a1aa;
+
+  /* Cores principais adaptadas */
+  --color-primary: #5ea3ff;
+  --color-primary-dark: #3c82e0;
+  --color-secondary: #ffd166;
+  --color-secondary-light: #3a3220;
+
+  /* Neutros */
+  --color-neutral-100: #1e1e1e;
+  --color-white: #1a1a1a;
+
+  /* Bordas e sombras */
+  --border-color: #2a2a2a;
+  --shadow-color: rgba(0, 0, 0, 0.6);
+
+  /* Espaçamento e demais constantes não mudam */
+}
 body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.4;
@@ -181,6 +207,54 @@ footer {
 button:focus, a:focus {
   outline: 3px solid #ffb703;
   outline-offset: 2px;
+}
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  margin-left: 1rem;
+}
+
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: var(--border-color, #ccc);
+  border-radius: 34px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.slider::before {
+  position: absolute;
+  content: "🌙";
+  height: 22px;
+  width: 22px;
+  left: 2px;
+  top: 2px;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-neutral-100, #fff);
+  border-radius: 50%;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+/* Quando ativado */
+input:checked + .slider {
+  background-color: var(--color-primary, #0077cc);
+}
+
+input:checked + .slider::before {
+  content: "☀️";
+  transform: translateX(24px);
 }
 @media (min-width: 800px) {
   .menu {

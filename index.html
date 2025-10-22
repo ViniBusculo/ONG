@@ -24,7 +24,28 @@
         </ul>
       </nav>
     </div>
+
+    <label class="theme-switch" for="toggle-theme">
+      <input type="checkbox" id="toggle-theme" aria-label="Alternar modo escuro/claro">
+      <span class="slider"></span>
+    </label>
   </header>
+
+  <script>
+    const themeCheckbox = document.getElementById("toggle-theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const savedTheme = localStorage.getItem("theme") || (prefersDark ? "dark" : "light");
+
+    document.body.classList.toggle("dark-mode", savedTheme === "dark");
+    themeCheckbox.checked = savedTheme === "dark";
+
+    themeCheckbox.addEventListener("change", () => {
+      const isDark = themeCheckbox.checked;
+      document.body.classList.toggle("dark-mode", isDark);
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+    });
+  </script>
+
 
   <main id="app" aria-live="polite">
     <!-- Conteúdo dinâmico das páginas será carregado aqui -->
